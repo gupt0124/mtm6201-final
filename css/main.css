@@ -1,0 +1,112 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://wallpapercave.com/wp/wp2752752.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f433;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffc107;
+}
+
+main {
+    padding: 30px;
+    background-color: #ffffff6b;
+    backdrop-filter: blur(80px);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.jumbotron {
+    background-size: cover;
+    background-position: center;
+    color: #090909;
+    text-align: center;
+    padding: 100px 0;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.jumbotron h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.jumbotron p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.service {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+
+
+.service img {
+    width: 50%;
+    border-radius: 10px;
+}
+  
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    nav a {
+        margin: 0 10px;
+    }
+
+    .jumbotron {
+        padding: 80px 0;
+    }
+}

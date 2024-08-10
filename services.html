@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infrastructure Services</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+    <header>
+        <h1>Infrastructure Services</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main class="container">
+        <section id="services">
+            <h1 align="center">Our Infrastructure Services</h1><br>
+            <div class="service" id="roadConstruction">
+                <h1>Road Construction</h1><br>
+                <img src="road1.jpg" alt="Road 1"><br><br>
+                <p>
+                    <h3>We specialize in building high-quality roads for safe and efficient transportation.
+                    </h3>
+                    </p>
+            </div><br>
+            <div class="service" id="bridgeEngineering">
+                <h1>Bridge Engineering</h1><br>
+                <img src="bridge1.jpg" alt="Bridge 1"><br><br>
+                <p><h3>expertise extends to designing and constructing sturdy bridges to connect communities.</h3</p>
+            </div><br>
+            <div class="service" id="industrialPlanning">
+                <h1>Industrial Planning</h1><br>
+                <img src="planning1.jpg" alt="Planning 1"><br><br>
+                <p>
+                    <h3>provide comprehensive Industrial planning services tailored to your project needs.
+                </h3>
+                </p>
+            </div><br>
+            <div class="service" id="waterManagement">
+                <h1>Water Management</h1><br>
+                <img src="water1.jpg" alt="Water 1"><br><br>
+                <p>
+                    <h3>Our services include efficient water management solutions for sustainable development.</h3>
+                </p>
+            </div><br>
+            <div class="service" id="urbanDevelopment">
+                <h1>Urban Development</h1><br>
+                <img src="urban1.jpg" alt="Urban 1"><br><br>
+                <p>
+                    <h3>We undertake urban development projects to create livable and vibrant communities.</h3>
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Infrastructure Services. All rights reserved.</p>
+    </footer>
+    <script>
+        // Define image paths for each service
+        const roadConstructionImages = ["road1.jpg", "road2.jpg", "road3.jpg"];
+        const bridgeEngineeringImages = ["bridge1.jpg", "bridge2.jpg", "bridge3.jpg"];
+        const industrialPlanningImages = ["planning1.jpg", "planning2.jpg", "planning3.jpg"];
+        const waterManagementImages = ["water1.jpg", "water2.jpg", "water3.jpg"];
+        const urbanDevelopmentImages = ["urban1.jpg", "urban2.jpg", "urban3.jpg"];
+
+        // Function to change images at regular intervals
+        function changeImages(images, elementId) {
+            const element = document.getElementById(elementId);
+            let index = 0;
+            setInterval(() => {
+                index = (index + 1) % images.length;
+                element.querySelector('img').src = images[index];
+            }, 5000); // Change images every 5 seconds
+        }
+
+        // Call the function for each service
+        changeImages(roadConstructionImages, 'roadConstruction');
+        changeImages(bridgeEngineeringImages, 'bridgeEngineering');
+        changeImages(industrialPlanningImages, 'infrastructurePlanning');
+        changeImages(waterManagementImages, 'waterManagement');
+        changeImages(urbanDevelopmentImages, 'urbanDevelopment');
+    </script>
+</body>
+</html>
